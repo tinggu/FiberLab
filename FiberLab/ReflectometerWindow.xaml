@@ -7,32 +7,52 @@
         mc:Ignorable="d"
         Title="ReflectometerLab" Height="450" Width="800">
     <Grid>
-        <WpfPlot Name="RftmPlot" Margin="0,136,0,0" />
-        <Button Content="Apply" HorizontalAlignment="Left" Margin="707,61,0,0" VerticalAlignment="Top" Width="75"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="511*"/>
+            <ColumnDefinition Width="281*"/>
+        </Grid.ColumnDefinitions>
+        <WpfPlot Name="RftmPlot" Margin="0,109,0,0" Grid.ColumnSpan="2" />
+        <Button Content="Apply" HorizontalAlignment="Left" Margin="195,30,0,0" VerticalAlignment="Top" Width="76" Grid.Column="1" RenderTransformOrigin="0.493,1.4"/>
         <ComboBox HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="120">
-            <ListBoxItem Content="850 nm"/>
-            <ListBoxItem Content="1310 nm"/>
-            <ListBoxItem Content="1550 nm"/>
+            <ListBoxItem Content="SM 850 nm"/>
+            <ListBoxItem Content="SM 1310 nm"/>
+            <ListBoxItem Content="SM 1550 nm"/>
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="Wrap" Text="OTDR test pulse width wavelength" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,60,0,0" TextWrapping="Wrap" Text="OTDR test range" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,81,0,0" TextWrapping="Wrap" Text="Write test range" VerticalAlignment="Top" Width="97"/>
-        <TextBlock HorizontalAlignment="Left" Margin="112,84,0,0" TextWrapping="Wrap" Text="km" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="284,12,0,0" TextWrapping="Wrap" Text="OTDR test pulse width" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="284,60,0,0" TextWrapping="Wrap" Text="Number of averages for each trace" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="284,81,0,0" VerticalAlignment="Top" Width="120">
+        <TextBlock HorizontalAlignment="Left" Margin="10,60,0,0" TextWrapping="Wrap" Text="OTDR test range - Lmax" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="Wrap" Text="OTDR test pulse width" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,60,0,0" TextWrapping="Wrap" Text="Number of averages for each trace" VerticalAlignment="Top" Grid.Column="1"/>
+        <ComboBox HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
+            <ListBoxItem Content="1"/>
+            <ListBoxItem Content="2"/>
+            <ListBoxItem Content="4"/>
+            <ListBoxItem Content="8"/>
             <ListBoxItem Content="16"/>
-            <ListBoxItem Content="24"/>
             <ListBoxItem Content="32"/>
-            <ListBoxItem Content="48"/>
             <ListBoxItem Content="64"/>
+            <ListBoxItem Content="128"/>
+            <ListBoxItem Content="256"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Margin="284,33,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
             <ListBoxItem Content="10 ns"/>
             <ListBoxItem Content="15 ns"/>
             <ListBoxItem Content="20 ns"/>
             <ListBoxItem Content="25 ns"/>
             <ListBoxItem Content="30 ns"/>
         </ComboBox>
+        <TextBox HorizontalAlignment="Left" MaxLength="5" MaxLines="1" Height="23" Margin="10,81,0,0" TextWrapping="Wrap" Text="180" VerticalAlignment="Top" Width="46" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,84,0,0" TextWrapping="Wrap" Text="km" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="225,12,0,0" TextWrapping="Wrap" Text="Backscatter Coefficient - BC" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="304,33,0,0" TextWrapping="Wrap" Text="dB" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" MaxLength="8" MaxLines="1" Height="23" Margin="225,30,0,0" TextWrapping="Wrap" Text="-80.0" VerticalAlignment="Top" Width="74"/>
+        <TextBlock HorizontalAlignment="Left" Margin="225,60,0,0" TextWrapping="Wrap" Text="Refractive index - n" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" MaxLength="32" MaxLines="1" Height="23" Margin="225,81,0,0" TextWrapping="Wrap" Text="1.47500" VerticalAlignment="Top" Width="97"/>
+        <TextBlock HorizontalAlignment="Left" Margin="404,12,0,0" TextWrapping="Wrap" Text="Section Begin - L1" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="464,33,0,0" TextWrapping="Wrap" Text="km" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" MaxLength="5" MaxLines="1" Height="23" Margin="404,30,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="55"/>
+        <TextBlock HorizontalAlignment="Left" Margin="404,60,0,0" TextWrapping="Wrap" Text="Section End - L2" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="464,84,0,0" TextWrapping="Wrap" Text="km" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" MaxLength="5" MaxLines="1" Height="23" Margin="404,81,0,0" TextWrapping="Wrap" Text="180" VerticalAlignment="Top" Width="55"/>
+
     </Grid>
 </Window>

@@ -52,5 +52,9 @@ namespace FiberLab
 
         }
 
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
