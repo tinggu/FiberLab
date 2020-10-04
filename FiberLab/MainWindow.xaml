@@ -10,6 +10,6 @@
         <Button Content="Open Reflectometer" Margin="317,62,317,0" VerticalAlignment="Top" Height="28"/>
         <Button Content="Open Saves" Margin="317,95,317,0" VerticalAlignment="Top" Height="28"/>
         <Button Content="Add formulas" Margin="317,128,317,0" VerticalAlignment="Top" Height="28"/>
-        <Button Content="Credits" Margin="317,371,317,0" VerticalAlignment="Top" Height="28"/>
+        <Button Content="Credits" Margin="317,368,317,0" VerticalAlignment="Top" Height="28"/>
     </Grid>
 </Window>
