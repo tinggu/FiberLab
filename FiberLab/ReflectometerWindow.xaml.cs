@@ -14,14 +14,18 @@ using System.Windows.Shapes;
 
 namespace FiberLab
 {
+
     /// <summary>
     /// Логика взаимодействия для ReflectometerWindow.xaml
     /// </summary>
     public partial class ReflectometerWindow : Window
     {
+
+
         public ReflectometerWindow()
         {
             InitializeComponent();
         }
+
     }
 }
