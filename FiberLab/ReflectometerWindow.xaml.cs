@@ -35,8 +35,8 @@ namespace FiberLab
 
         void RenderRftmPlot()
         {
-            double[] dataX = new double[] { 1, 2, 3, 4, 5 }; 
-            double[] dataY = new double[] { 1, 4, 9, 16, 25 };
+            double[] dataX = new double[] { 250, 25, 3, 4, 5 }; // just a test data
+            double[] dataY = new double[] { 1, 4, 9, 16, 25 }; // just a test data
             RftmPlot.plt.PlotScatter(dataX, dataY);
 
             RftmPlot.plt.Title("Reflectometer (OTDR) Output");
