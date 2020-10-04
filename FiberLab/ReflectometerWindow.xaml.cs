@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace FiberLab
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ReflectometerWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ReflectometerWindow : Window
     {
-        public MainWindow()
+        public ReflectometerWindow()
         {
             InitializeComponent();
-        }
-
-        private void OpenRFTM_Clicked(object sender, RoutedEventArgs e)
-        {
-            ReflectometerWindow rftmWin = new ReflectometerWindow();
-            rftmWin.Show();
         }
     }
 }
