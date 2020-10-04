@@ -38,7 +38,13 @@ namespace FiberLab
             double[] dataX = new double[] { 1, 2, 3, 4, 5 }; 
             double[] dataY = new double[] { 1, 4, 9, 16, 25 };
             RftmPlot.plt.PlotScatter(dataX, dataY);
+
+            RftmPlot.plt.Title("Reflectometer (OTDR) Output");
+            RftmPlot.plt.YLabel("Power Loss, dB");
+            RftmPlot.plt.XLabel("Distance, km");
+
             RftmPlot.Render();
+
         }
 
     }

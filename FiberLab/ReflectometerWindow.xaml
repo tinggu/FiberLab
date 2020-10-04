@@ -8,5 +8,31 @@
         Title="ReflectometerLab" Height="450" Width="800">
     <Grid>
         <WpfPlot Name="RftmPlot" Margin="0,136,0,0" />
+        <Button Content="Apply" HorizontalAlignment="Left" Margin="707,61,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="120">
+            <ListBoxItem Content="850 nm"/>
+            <ListBoxItem Content="1310 nm"/>
+            <ListBoxItem Content="1550 nm"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="Wrap" Text="OTDR test pulse width wavelength" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,60,0,0" TextWrapping="Wrap" Text="OTDR test range" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,81,0,0" TextWrapping="Wrap" Text="Write test range" VerticalAlignment="Top" Width="97"/>
+        <TextBlock HorizontalAlignment="Left" Margin="112,84,0,0" TextWrapping="Wrap" Text="km" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284,12,0,0" TextWrapping="Wrap" Text="OTDR test pulse width" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284,60,0,0" TextWrapping="Wrap" Text="Number of averages for each trace" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="284,81,0,0" VerticalAlignment="Top" Width="120">
+            <ListBoxItem Content="16"/>
+            <ListBoxItem Content="24"/>
+            <ListBoxItem Content="32"/>
+            <ListBoxItem Content="48"/>
+            <ListBoxItem Content="64"/>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="284,33,0,0" VerticalAlignment="Top" Width="120">
+            <ListBoxItem Content="10 ns"/>
+            <ListBoxItem Content="15 ns"/>
+            <ListBoxItem Content="20 ns"/>
+            <ListBoxItem Content="25 ns"/>
+            <ListBoxItem Content="30 ns"/>
+        </ComboBox>
     </Grid>
 </Window>
