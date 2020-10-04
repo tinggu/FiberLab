@@ -25,10 +25,10 @@ namespace FiberLab
         public ReflectometerWindow()
         {
             InitializeComponent();
-            Start();
+            ApplySettings();
         }
 
-        void Start()
+        void ApplySettings()
         {
             RenderRftmPlot();
         }
@@ -42,6 +42,11 @@ namespace FiberLab
             RftmPlot.plt.Title("Reflectometer (OTDR) Output");
             RftmPlot.plt.YLabel("Power Loss, dB");
             RftmPlot.plt.XLabel("Distance, km");
+
+            RftmPlot.plt.PlotHLine(y: 2, draggable: true, dragLimitLower: 0);
+            RftmPlot.plt.PlotVLine(x: 2, draggable: true, dragLimitLower: 0);
+
+            RftmPlot.plt.Grid(lineStyle: ScottPlot.LineStyle.Dot);
 
             RftmPlot.Render();
 
