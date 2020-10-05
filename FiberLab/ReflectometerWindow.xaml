@@ -12,7 +12,7 @@
             <ColumnDefinition Width="281*"/>
         </Grid.ColumnDefinitions>
         <WpfPlot Name="RftmPlot" Margin="0,109,0,0" Grid.ColumnSpan="2" />
-        <Button Content="Apply" HorizontalAlignment="Left" Margin="195,30,0,0" VerticalAlignment="Top" Width="76" Grid.Column="1" RenderTransformOrigin="0.493,1.4"/>
+        <Button Content="Apply" HorizontalAlignment="Left" Margin="195,34,0,0" VerticalAlignment="Top" Width="76" Grid.Column="1" RenderTransformOrigin="0.493,1.4"/>
         <ComboBox HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="120">
             <ListBoxItem Content="SM 850 nm"/>
             <ListBoxItem Content="SM 1310 nm"/>
